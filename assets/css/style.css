@@ -1,3 +1,146 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: "Work_Sans";
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
+header {
+  padding: 0 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  background-color: black;
+  color: white;
+  height: 80vh;
+  position: relative;
+}
+header hr {
+  position: absolute;
+  top: 0;
+  border: none;
+  border-left: 1px solid white;
+  width: 1px;
+  height: 5rem;
+}
+header div {
+  width: 100%;
+}
+header .headerTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+header h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.8;
+  text-transform: uppercase;
+  width: 30rem;
+}
+header span {
+  color: black;
+  text-shadow: 1px 0 0 white, 0 1px 0 white, -1px 0 0 white, 0 -1px 0 white; /*bottom*/
+}
+header p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Work_Sans";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+}
+header .headerBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+}
+header .headerBar button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+header .headerBar button:hover {
+  background-color: white;
+  color: black;
+  transition-delay: 0.1s;
+}
+
+.sec1 {
+  padding: 0 7rem;
+  background-color: black;
+  position: relative;
+}
+.sec1 .information {
+  color: #FFF;
+  text-align: none;
+  font-family: "Inter";
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: auto;
+  text-transform: normal;
+  width: 80%;
+}
+.sec1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 10rem 0;
+}
+.sec1 .small {
+  color: #FFF;
+  text-align: none;
+  font-family: "Work_Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+}
+.sec1 .large {
+  color: #FFF;
+  text-align: none;
+  font-family: "Inter";
+  font-size: 5.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: auto;
+  text-transform: normal;
+}
+.sec1 img {
+  width: 33rem;
+  height: auto;
+  position: absolute;
+  right: 0rem;
+  bottom: 7rem;
+}
+.sec1 .devider {
+  height: 1px;
+}
 
 /*# sourceMappingURL=style.css.map */

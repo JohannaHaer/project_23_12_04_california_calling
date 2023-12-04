@@ -1,0 +1,106 @@
+@use 'mixin' as mixin;
+@use 'variables' as var;
+@import 'font';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    @include mixin.paddingBody;
+    @include mixin.layoutFlex(flex, column, center, center, 6rem);
+    background-color: black;
+    color: white;
+    height: 80vh;
+    position: relative;
+    
+    hr {
+        position: absolute;
+        top: 0;
+        border: none;
+        border-left: 1px solid white;
+        width: 1px;
+        height: 5rem;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    .headerTitle {
+        @include mixin.layoutFlex(flex, column, center, center, 2rem);
+    }
+
+    h1 {
+        @include mixin.font(#FFF, center, 'Inter', 4rem, normal, 700, 0.8, uppercase);
+        width: 30rem;
+    }
+
+    span {
+        color: black;
+        text-shadow: 
+        1px 0 0 white, /*right */
+        0 1px 0 white, /*top */
+        -1px 0 0 white, /*left */
+        0 -1px 0 white; /*bottom*/
+    }
+
+    p {
+        @include mixin.font(#FFF, center, 'Work_Sans', 0.75rem, normal, 400, auto, normal);
+    }
+    
+    .headerBar {
+        @include mixin.layoutFlex(flex, row, space-between, center, none);
+
+        button {
+            @include mixin.button;
+        }
+
+        button:hover {
+            @include mixin.buttonHover;
+        }
+    }
+}
+
+.sec1 {
+    @include mixin.paddingBody;
+    background-color: black; 
+    position: relative;
+    
+    .information {
+        @include mixin.font(#FFF, none, 'Inter', 6rem, normal, 700, auto, normal);
+        width: 80%;
+    }
+
+    div {
+        @include mixin.layoutFlex(flex, column, center, flex-start, 1rem);
+        margin: 10rem 0;
+    }
+
+    .small  {
+        @include mixin.font(#FFF, none, 'Work_Sans', 0.875rem, normal, 400, auto, normal);
+    }
+
+    .large  {
+        @include mixin.font(#FFF, none, 'Inter', 5.4rem, normal, 700, auto, normal);
+    }
+
+    img {
+        @include mixin.img(33rem, auto, absolute);
+        right: 0rem;
+        bottom: 7rem;
+    }
+
+    .devider {
+        height: 1px;
+    }
+}
+
+
+
+
+

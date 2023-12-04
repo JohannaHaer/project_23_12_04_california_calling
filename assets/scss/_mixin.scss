@@ -1,0 +1,42 @@
+@mixin paddingBody {
+    padding: 0 7rem;
+}
+
+@mixin layoutFlex($display, $direction, $justify, $align, $gap) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin font($color, $text-align, $familiy, $size, $style, $weight, $line-height, $transform){
+    color: $color;
+    text-align: $text-align;
+    font-family: $familiy;
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $line-height;
+    text-transform: $transform;
+}
+
+@mixin img($width, $height, $position) {
+    width: $width;
+    height: $height;
+    position: $position;
+}
+
+@mixin button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+@mixin buttonHover {
+    background-color: white;
+    color: black;
+    transition-delay: 0.1s;
+}
