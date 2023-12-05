@@ -241,7 +241,7 @@ article {
     overflow: hidden;
     position: relative;
 
-    .circle {
+    img {
         position: absolute;
         @include mixin.img(20rem, auto);
         top: -25%;
@@ -318,3 +318,105 @@ article {
     }
 }
 
+footer {
+    overflow: hidden;
+
+    .footer {
+        @include mixin.paddingBody;
+        height: 80vh;
+        background-color: black;
+        @include mixin.layoutFlex(flex, column, space-between, space-between, 1rem);
+        position: relative;
+
+        .join {
+            @include mixin.font(white, left, 'Work_Sans', 0.75rem, normal, 400, auto, normal);
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+            width: 50%;
+        }
+
+        .description {
+            @include mixin.font(white, left, 'Inter', 1.5rem, normal, 700, auto, normal);
+            margin-bottom: 2rem;
+            width: 40%;
+        }
+
+        button {
+            @include mixin.button;
+        }
+
+        button:hover {
+            @include mixin.buttonHover;
+        }
+
+        .footerDiv1 {
+            @include mixin.layoutFlex(flex, row, space-between, space-between, 1rem);
+        
+
+            .footerSocial {
+                @include mixin.layoutFlex(flex, row, left, space-between, 1rem);
+                margin-bottom: 2rem;
+
+                img {
+                    @include mixin.img(2rem, auto);
+                }
+            }
+
+            .copyright {
+                @include mixin.font(white, left, 'Work_Sans', 0.75rem, normal, 400, auto, normal);
+                margin-bottom: 1rem;
+            }
+
+            .footerNGO {
+                margin-right: 10rem;
+
+                img {
+                    @include mixin.img(3rem, auto);
+                }
+            }
+        }
+
+        .bannerDiv {
+            position: absolute;
+            width: 115%;
+            right: 0;
+            bottom: 0;
+            transform: translateX(50%) rotate(45deg);
+            background-color: white;
+
+            .banner {
+                @include mixin.font(black, left, 'Inter', 5rem, normal, 400, auto, normal);
+                animation: banner 15s 0.2s linear infinite;
+
+                span {
+                    color: white;
+                    text-shadow: 
+                    1px 0 0 black, /*right */
+                    0 1px 0 black, /*top */
+                    -1px 0 0 black, /*left */
+                    0 -1px 0 black; /*bottom*/
+                }
+
+                @keyframes banner {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    25% {
+                        transform: translateX(100%);
+                    }
+                    50% {
+                        transform: translateX(0);
+                    }
+                    75% {
+                        transform: translateX(-100%);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+
+    }
+
+}

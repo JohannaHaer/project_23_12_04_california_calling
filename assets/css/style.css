@@ -336,7 +336,7 @@ article {
   overflow: hidden;
   position: relative;
 }
-article .circle {
+article img {
   position: absolute;
   width: 20rem;
   height: auto;
@@ -438,6 +438,135 @@ article .circle {
   height: auto;
   bottom: -20%;
   left: 10%;
+}
+
+footer {
+  overflow: hidden;
+}
+footer .footer {
+  padding: 0 7rem;
+  height: 80vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  gap: 1rem;
+  position: relative;
+}
+footer .footer .join {
+  color: white;
+  text-align: left;
+  font-family: "Work_Sans";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+footer .footer .description {
+  color: white;
+  text-align: left;
+  font-family: "Inter";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: auto;
+  text-transform: normal;
+  margin-bottom: 2rem;
+  width: 40%;
+}
+footer .footer button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+footer .footer button:hover {
+  background-color: white;
+  color: black;
+  transition-delay: 0.1s;
+}
+footer .footer .footerDiv1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  gap: 1rem;
+}
+footer .footer .footerDiv1 .footerSocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+footer .footer .footerDiv1 .footerSocial img {
+  width: 2rem;
+  height: auto;
+}
+footer .footer .footerDiv1 .copyright {
+  color: white;
+  text-align: left;
+  font-family: "Work_Sans";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+  margin-bottom: 1rem;
+}
+footer .footer .footerDiv1 .footerNGO {
+  margin-right: 10rem;
+}
+footer .footer .footerDiv1 .footerNGO img {
+  width: 3rem;
+  height: auto;
+}
+footer .footer .bannerDiv {
+  position: absolute;
+  width: 115%;
+  right: 0;
+  bottom: 0;
+  transform: translateX(50%) rotate(45deg);
+  background-color: white;
+}
+footer .footer .bannerDiv .banner {
+  color: black;
+  text-align: left;
+  font-family: "Inter";
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+  animation: banner 15s 0.2s linear infinite;
+}
+footer .footer .bannerDiv .banner span {
+  color: white;
+  text-shadow: 1px 0 0 black, 0 1px 0 black, -1px 0 0 black, 0 -1px 0 black; /*bottom*/
+}
+@keyframes banner {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
