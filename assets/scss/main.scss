@@ -178,12 +178,10 @@ header {
 
 .sec3 {
     @include mixin.paddingBody;
-    height: 150vh;
+    height: 180vh;
     max-width: 100%;
     background-color: black;
-    @include mixin.layoutFlex(flex, row, center, flex-start, 1rem);
-    position: relative;
-    margin-bottom: 20rem;
+    @include mixin.layoutFlex(flex, column, space-between, space-between, 1rem);
 
     .goldenBear {
         @include mixin.layoutFlex(flex, row, space-between, center, 1rem);
@@ -217,28 +215,38 @@ header {
         }
     }
 
-    .bear1 {
-        position: absolute;
-        @include mixin.img(47rem, auto);
-        bottom: -10rem;
-        left: 7rem;
-    }
+    .bears {
+        position: relative;
+        height: 40vh;
 
-    .bear2 {
-        position: absolute;
-        @include mixin.img(27rem, auto);
-        bottom: -5rem;
-        right: 13rem;
+        .bear1 {
+            position: absolute;
+            @include mixin.img(47rem, auto);
+            bottom: -30%;
+            left: 0;
+        }
+    
+        .bear2 {
+            position: absolute;
+            @include mixin.img(27rem, auto);
+            bottom: -20%;
+            right: 10%;
+        }
     }
+}
+
+article {
+    max-width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
 
     .circle {
         position: absolute;
         @include mixin.img(20rem, auto);
-        bottom: -13rem;
-        right: 5rem;
-        overflow: hidden;
+        top: -25%;
+        right: -5%;
         animation: circle 15s 0.1s linear infinite;
-        border: 2px solid green;
     }
 
     @keyframes circle {
@@ -253,10 +261,9 @@ header {
 
 .sec4 {
     @include mixin.paddingBody;
-    height: 150vh;
+    height: 180vh;
     background-color: rgba(238, 238, 238, 1);
-    @include mixin.layoutFlex(flex, row, center, flex-start, 1rem);
-    position: relative;
+    @include mixin.layoutFlex(flex, column, space-between, space-between, 1rem);
     margin-bottom: 20rem;
 
     .poppyBear {
@@ -291,18 +298,23 @@ header {
         }
     }
 
-    .bear1 {
-        position: absolute;
-        @include mixin.img(47rem, auto);
-        bottom: -15rem;
-        right: 7rem;
-    }
+    .bears {
+        position: relative;
+        height: 40vh;
 
-    .bear2 {
-        position: absolute;
-        @include mixin.img(27rem, auto);
-        bottom: -10rem;
-        left: 13rem;
+        .bear1 {
+            position: absolute;
+            @include mixin.img(47rem, auto);
+            bottom: -30%;
+            right: 0;
+        }
+    
+        .bear2 {
+            position: absolute;
+            @include mixin.img(27rem, auto);
+            bottom: -20%;
+            left: 10%;
+        }
     }
 }
 
