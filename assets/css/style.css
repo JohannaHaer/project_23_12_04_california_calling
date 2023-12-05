@@ -199,45 +199,45 @@ header .headerBar button:hover {
   height: auto;
 }
 .sec2 .img1 {
-  top: -15rem;
-  right: 10rem;
+  top: -20%;
+  right: 10%;
   z-index: 1;
   width: 15rem;
   height: auto;
 }
 .sec2 .img2 {
   top: 0;
-  left: 5rem;
+  left: 5%;
   width: 15rem;
   height: auto;
 }
 .sec2 .img3 {
-  bottom: 50rem;
-  right: 10rem;
+  top: 15%;
+  right: 10%;
   width: 10rem;
   height: auto;
 }
 .sec2 .img4 {
-  bottom: 35rem;
-  left: 20rem;
+  top: 30%;
+  left: 25%;
   width: 15rem;
   height: auto;
 }
 .sec2 .img5 {
-  bottom: 30rem;
-  right: 20rem;
+  bottom: 40%;
+  right: 25%;
   width: 15rem;
   height: auto;
 }
 .sec2 .img6 {
-  bottom: 10rem;
+  bottom: 15%;
   left: 0;
   width: 10rem;
   height: auto;
 }
 .sec2 .img7 {
-  bottom: -2rem;
-  right: 20rem;
+  bottom: -5%;
+  right: 20%;
   width: 20rem;
   height: auto;
   z-index: 2;
@@ -246,6 +246,7 @@ header .headerBar button:hover {
 .sec3 {
   padding: 0 7rem;
   height: 150vh;
+  max-width: 100%;
   background-color: black;
   display: flex;
   flex-direction: row;
