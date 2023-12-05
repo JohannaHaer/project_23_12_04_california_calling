@@ -181,7 +181,7 @@ header {
     height: 180vh;
     max-width: 100%;
     background-color: black;
-    @include mixin.layoutFlex(flex, column, space-between, space-between, 1rem);
+    @include mixin.layoutFlex(flex, column, space-between, center, 1rem);
 
     .goldenBear {
         @include mixin.layoutFlex(flex, row, space-between, center, 1rem);
@@ -218,6 +218,7 @@ header {
     .bears {
         position: relative;
         height: 40vh;
+        width: 65%;
 
         .bear1 {
             position: absolute;
@@ -230,7 +231,7 @@ header {
             position: absolute;
             @include mixin.img(27rem, auto);
             bottom: -20%;
-            right: 10%;
+            right: 0;
         }
     }
 }
@@ -263,7 +264,7 @@ article {
     @include mixin.paddingBody;
     height: 180vh;
     background-color: rgba(238, 238, 238, 1);
-    @include mixin.layoutFlex(flex, column, space-between, space-between, 1rem);
+    @include mixin.layoutFlex(flex, column, space-between, center, 1rem);
     margin-bottom: 20rem;
 
     .poppyBear {
@@ -301,6 +302,7 @@ article {
     .bears {
         position: relative;
         height: 40vh;
+        width: 65%;
 
         .bear1 {
             position: absolute;
@@ -313,7 +315,7 @@ article {
             position: absolute;
             @include mixin.img(27rem, auto);
             bottom: -20%;
-            left: 10%;
+            left: 0;
         }
     }
 }

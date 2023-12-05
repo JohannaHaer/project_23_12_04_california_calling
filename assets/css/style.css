@@ -251,7 +251,7 @@ header .headerBar button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: center;
   gap: 1rem;
 }
 .sec3 .goldenBear {
@@ -314,6 +314,7 @@ header .headerBar button:hover {
 .sec3 .bears {
   position: relative;
   height: 40vh;
+  width: 65%;
 }
 .sec3 .bears .bear1 {
   position: absolute;
@@ -327,7 +328,7 @@ header .headerBar button:hover {
   width: 27rem;
   height: auto;
   bottom: -20%;
-  right: 10%;
+  right: 0;
 }
 
 article {
@@ -360,7 +361,7 @@ article img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: center;
   gap: 1rem;
   margin-bottom: 20rem;
 }
@@ -424,6 +425,7 @@ article img {
 .sec4 .bears {
   position: relative;
   height: 40vh;
+  width: 65%;
 }
 .sec4 .bears .bear1 {
   position: absolute;
@@ -437,7 +439,7 @@ article img {
   width: 27rem;
   height: auto;
   bottom: -20%;
-  left: 10%;
+  left: 0;
 }
 
 footer {
