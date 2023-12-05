@@ -245,14 +245,14 @@ header .headerBar button:hover {
 
 .sec3 {
   padding: 0 7rem;
-  height: 180vh;
+  height: auto;
   max-width: 100%;
   background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 25rem;
 }
 .sec3 .goldenBear {
   display: flex;
@@ -260,7 +260,7 @@ header .headerBar button:hover {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin-top: 7rem;
+  margin-top: 10rem;
 }
 .sec3 .goldenBearTitle {
   width: 30%;
@@ -314,21 +314,23 @@ header .headerBar button:hover {
 .sec3 .bears {
   position: relative;
   height: 40vh;
-  width: 65%;
+  width: 45rem;
+  border: 2px solid green;
 }
 .sec3 .bears .bear1 {
   position: absolute;
   width: 47rem;
   height: auto;
-  bottom: -30%;
-  left: 0;
+  bottom: -60%;
+  left: -15rem;
 }
 .sec3 .bears .bear2 {
   position: absolute;
   width: 27rem;
   height: auto;
-  bottom: -20%;
-  right: 0;
+  bottom: -40%;
+  right: -12rem;
+  z-index: 1;
 }
 
 article {
@@ -356,13 +358,13 @@ article img {
 
 .sec4 {
   padding: 0 7rem;
-  height: 180vh;
+  height: auto;
   background-color: rgb(238, 238, 238);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 25rem;
   margin-bottom: 20rem;
 }
 .sec4 .poppyBear {
@@ -425,21 +427,21 @@ article img {
 .sec4 .bears {
   position: relative;
   height: 40vh;
-  width: 65%;
+  width: 45rem;
 }
 .sec4 .bears .bear1 {
   position: absolute;
   width: 47rem;
   height: auto;
-  bottom: -30%;
-  right: 0;
+  bottom: -60%;
+  right: -12rem;
 }
 .sec4 .bears .bear2 {
   position: absolute;
   width: 27rem;
   height: auto;
-  bottom: -20%;
-  left: 0;
+  bottom: -40%;
+  left: -15rem;
 }
 
 footer {
@@ -504,13 +506,16 @@ footer .footer .footerDiv1 .footerSocial {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: space-between;
+  align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 footer .footer .footerDiv1 .footerSocial img {
   width: 2rem;
   height: auto;
+}
+footer .footer .footerDiv1 .footerSocial a {
+  cursor: pointer;
 }
 footer .footer .footerDiv1 .copyright {
   color: white;
@@ -525,6 +530,11 @@ footer .footer .footerDiv1 .copyright {
 }
 footer .footer .footerDiv1 .footerNGO {
   margin-right: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
 }
 footer .footer .footerDiv1 .footerNGO img {
   width: 3rem;
@@ -532,7 +542,7 @@ footer .footer .footerDiv1 .footerNGO img {
 }
 footer .footer .bannerDiv {
   position: absolute;
-  width: 115%;
+  width: 130%;
   right: 0;
   bottom: 0;
   transform: translateX(50%) rotate(45deg);

@@ -1,7 +1,7 @@
 @use 'mixin' as mixin;
-@use 'variables' as var;
 @import 'font';
 
+// Global Styling
 
 * {
     margin: 0;
@@ -9,6 +9,8 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+// Header Styling mit mixin.scss 
 
 header {
     @include mixin.paddingBody;
@@ -66,6 +68,8 @@ header {
     }
 }
 
+// Styling section 1 with display flex and a map of california with an absolute position
+
 .sec1 {
     @include mixin.paddingBody;
     background-color: black; 
@@ -100,6 +104,8 @@ header {
         height: 1px;
     }
 }
+
+// Styling section 2 with pictures on different positions (position absolute)
 
 .sec2 {
     @include mixin.paddingBody;
@@ -176,16 +182,18 @@ header {
     }
 }
 
+// Styling section 3 with a qout on golden bears 
+
 .sec3 {
     @include mixin.paddingBody;
-    height: 180vh;
+    height: auto;
     max-width: 100%;
     background-color: black;
-    @include mixin.layoutFlex(flex, column, space-between, center, 1rem);
+    @include mixin.layoutFlex(flex, column, space-between, center, 25rem);
 
     .goldenBear {
         @include mixin.layoutFlex(flex, row, space-between, center, 1rem);
-        margin-top: 7rem;
+        margin-top: 10rem;
     }
 
     .goldenBearTitle {
@@ -218,23 +226,27 @@ header {
     .bears {
         position: relative;
         height: 40vh;
-        width: 65%;
+        width: 45rem;
+        border: 2px solid green;
 
         .bear1 {
             position: absolute;
             @include mixin.img(47rem, auto);
-            bottom: -30%;
-            left: 0;
+            bottom: -60%;
+            left: -15rem;
         }
     
         .bear2 {
             position: absolute;
             @include mixin.img(27rem, auto);
-            bottom: -20%;
-            right: 0;
+            bottom: -40%;
+            right: -12rem;
+            z-index: 1;
         }
     }
 }
+
+// Animation of a calfornia cyrcle - spinning in the right bottom corner of section 3
 
 article {
     max-width: 100%;
@@ -260,11 +272,13 @@ article {
         }
 }
 
+// Styling section 4 like section 3 but without the animation and reversed positions of pictures
+
 .sec4 {
     @include mixin.paddingBody;
-    height: 180vh;
+    height: auto;
     background-color: rgba(238, 238, 238, 1);
-    @include mixin.layoutFlex(flex, column, space-between, center, 1rem);
+    @include mixin.layoutFlex(flex, column, space-between, center, 25rem);
     margin-bottom: 20rem;
 
     .poppyBear {
@@ -302,23 +316,25 @@ article {
     .bears {
         position: relative;
         height: 40vh;
-        width: 65%;
+        width: 45rem;
 
         .bear1 {
             position: absolute;
             @include mixin.img(47rem, auto);
-            bottom: -30%;
-            right: 0;
+            bottom: -60%;
+            right: -12rem;
         }
     
         .bear2 {
             position: absolute;
             @include mixin.img(27rem, auto);
-            bottom: -20%;
-            left: 0;
+            bottom: -40%;
+            left: -15rem;
         }
     }
 }
+
+// Styling of footer with an animation on banner
 
 footer {
     overflow: hidden;
@@ -356,11 +372,15 @@ footer {
         
 
             .footerSocial {
-                @include mixin.layoutFlex(flex, row, left, space-between, 1rem);
+                @include mixin.layoutFlex(flex, row, left, center, 1rem);
                 margin-bottom: 2rem;
 
                 img {
                     @include mixin.img(2rem, auto);
+                }
+
+                a {
+                    cursor: pointer;
                 }
             }
 
@@ -371,6 +391,7 @@ footer {
 
             .footerNGO {
                 margin-right: 10rem;
+                @include mixin.layoutFlex(flex, row, left, center, 1rem);
 
                 img {
                     @include mixin.img(3rem, auto);
@@ -380,7 +401,7 @@ footer {
 
         .bannerDiv {
             position: absolute;
-            width: 115%;
+            width: 130%;
             right: 0;
             bottom: 0;
             transform: translateX(50%) rotate(45deg);
