@@ -21,10 +21,9 @@
     text-transform: $transform;
 }
 
-@mixin img($width, $height, $position) {
+@mixin img($width, $height) {
     width: $width;
     height: $height;
-    position: $position;
 }
 
 @mixin button {

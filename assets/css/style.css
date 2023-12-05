@@ -136,11 +136,297 @@ header .headerBar button:hover {
   width: 33rem;
   height: auto;
   position: absolute;
-  right: 0rem;
+  right: 0;
   bottom: 7rem;
 }
 .sec1 .devider {
   height: 1px;
+}
+
+.sec2 {
+  padding: 0 7rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+}
+.sec2 .design {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sec2 .design h2 {
+  color: black;
+  text-align: left;
+  font-family: "Inter";
+  font-size: 5.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: auto;
+  text-transform: normal;
+  width: 40%;
+}
+.sec2 .design p {
+  color: black;
+  text-align: left;
+  font-family: "Work_Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+  width: 40%;
+}
+.sec2 p {
+  color: black;
+  text-align: left;
+  font-family: "Work_Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+  width: 40%;
+  margin-bottom: 15rem;
+}
+.sec2 img {
+  position: absolute;
+  width: 20rem;
+  height: auto;
+}
+.sec2 .img1 {
+  top: -15rem;
+  right: 10rem;
+  z-index: 1;
+  width: 15rem;
+  height: auto;
+}
+.sec2 .img2 {
+  top: 0;
+  left: 5rem;
+  width: 15rem;
+  height: auto;
+}
+.sec2 .img3 {
+  bottom: 50rem;
+  right: 10rem;
+  width: 10rem;
+  height: auto;
+}
+.sec2 .img4 {
+  bottom: 35rem;
+  left: 20rem;
+  width: 15rem;
+  height: auto;
+}
+.sec2 .img5 {
+  bottom: 30rem;
+  right: 20rem;
+  width: 15rem;
+  height: auto;
+}
+.sec2 .img6 {
+  bottom: 10rem;
+  left: 0;
+  width: 10rem;
+  height: auto;
+}
+.sec2 .img7 {
+  bottom: -2rem;
+  right: 20rem;
+  width: 20rem;
+  height: auto;
+  z-index: 2;
+}
+
+.sec3 {
+  padding: 0 7rem;
+  height: 150vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+  margin-bottom: 20rem;
+}
+.sec3 .goldenBear {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 7rem;
+}
+.sec3 .goldenBearTitle {
+  width: 30%;
+}
+.sec3 .goldenBearTitle p {
+  color: white;
+  text-align: left;
+  font-family: "Work_Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+  margin-bottom: 2rem;
+}
+.sec3 .goldenBearTitle h2 {
+  color: white;
+  text-align: left;
+  font-family: "Inter";
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: normal;
+}
+.sec3 .citation {
+  width: 50%;
+  margin-top: 3rem;
+}
+.sec3 .citation p {
+  color: white;
+  text-align: left;
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: auto;
+  text-transform: normal;
+  margin-bottom: 2rem;
+}
+.sec3 .citation .name {
+  color: white;
+  text-align: left;
+  font-family: "Work_Sans";
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+}
+.sec3 .bear1 {
+  position: absolute;
+  width: 47rem;
+  height: auto;
+  bottom: -10rem;
+  left: 7rem;
+}
+.sec3 .bear2 {
+  position: absolute;
+  width: 27rem;
+  height: auto;
+  bottom: -5rem;
+  right: 13rem;
+}
+.sec3 .circle {
+  position: absolute;
+  width: 20rem;
+  height: auto;
+  bottom: -13rem;
+  right: 5rem;
+  overflow: hidden;
+  animation: circle 15s 0.1s linear infinite;
+  border: 2px solid green;
+}
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sec4 {
+  padding: 0 7rem;
+  height: 150vh;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+  margin-bottom: 20rem;
+}
+.sec4 .poppyBear {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 7rem;
+}
+.sec4 .poppyBearTitle {
+  width: 30%;
+}
+.sec4 .poppyBearTitle p {
+  color: black;
+  text-align: left;
+  font-family: "Work_Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+  margin-bottom: 2rem;
+}
+.sec4 .poppyBearTitle h2 {
+  color: black;
+  text-align: left;
+  font-family: "Inter";
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: normal;
+}
+.sec4 .citation {
+  width: 50%;
+  margin-top: 3rem;
+}
+.sec4 .citation p {
+  color: black;
+  text-align: left;
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: auto;
+  text-transform: normal;
+  margin-bottom: 2rem;
+}
+.sec4 .citation .name {
+  color: black;
+  text-align: left;
+  font-family: "Work_Sans";
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  text-transform: normal;
+}
+.sec4 .bear1 {
+  position: absolute;
+  width: 47rem;
+  height: auto;
+  bottom: -15rem;
+  right: 7rem;
+}
+.sec4 .bear2 {
+  position: absolute;
+  width: 27rem;
+  height: auto;
+  bottom: -10rem;
+  left: 13rem;
 }
 
 /*# sourceMappingURL=style.css.map */

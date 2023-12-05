@@ -90,8 +90,9 @@ header {
     }
 
     img {
-        @include mixin.img(33rem, auto, absolute);
-        right: 0rem;
+        @include mixin.img(33rem, auto);
+        position: absolute;
+        right: 0;
         bottom: 7rem;
     }
 
@@ -100,7 +101,207 @@ header {
     }
 }
 
+.sec2 {
+    @include mixin.paddingBody;
+    position: relative;
+    @include mixin.layoutFlex(flex, column, center, center, 15rem);
 
+    .design {
+        @include mixin.layoutFlex(flex, column, center, center, 1rem);
 
+        h2 {
+            @include mixin.font(black, left, 'Inter', 5.2rem, normal, 700, auto, normal);
+            width: 40%;
+        }
 
+        p {
+            @include mixin.font(black, left, 'Work_Sans', 1rem, normal, 400, auto, normal);
+            width: 40%;
+        }
+    }
+
+    p {
+        @include mixin.font(black, left, 'Work_Sans', 1rem, normal, 400, auto, normal);
+            width: 40%;
+            margin-bottom: 15rem;
+    }
+
+    img {
+        position: absolute;
+        @include mixin.img(20rem, auto);
+    }
+
+    .img1 {
+        top: -15rem;
+        right: 10rem;
+        z-index: 1;
+        @include mixin.img(15rem, auto);
+    }
+
+    .img2 {
+        top: 0;
+        left: 5rem;
+        @include mixin.img(15rem, auto);
+    }
+
+    .img3 {
+        bottom: 50rem;
+        right: 10rem;
+        @include mixin.img(10rem, auto);
+    }
+
+    .img4 {
+        bottom: 35rem;
+        left: 20rem;
+        @include mixin.img(15rem, auto);
+    }
+
+    .img5 {
+        bottom: 30rem;
+        right: 20rem;
+        @include mixin.img(15rem, auto);
+    }
+
+    .img6 {
+        bottom: 10rem;
+        left: 0;
+        @include mixin.img(10rem, auto);
+    }
+
+    .img7 {
+        bottom: -2rem;
+        right: 20rem;
+        @include mixin.img(20rem, auto);
+        z-index: 2;
+    }
+}
+
+.sec3 {
+    @include mixin.paddingBody;
+    height: 150vh;
+    background-color: black;
+    @include mixin.layoutFlex(flex, row, center, flex-start, 1rem);
+    position: relative;
+    margin-bottom: 20rem;
+
+    .goldenBear {
+        @include mixin.layoutFlex(flex, row, space-between, center, 1rem);
+        margin-top: 7rem;
+    }
+
+    .goldenBearTitle {
+        width: 30%;
+
+        p {
+            @include mixin.font(white, left, 'Work_Sans', 1.2rem, normal, 400, auto, normal);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            @include mixin.font(white, left, 'Inter', 5rem, normal, 700, 1, normal);
+        }
+    }
+    
+    .citation {
+        width: 50%;
+        margin-top: 3rem;
+
+        p {
+            @include mixin.font(white, left, 'Inter', 1.8rem, normal, 700, auto, normal);
+            margin-bottom: 2rem;
+        }
+
+        .name {
+            @include mixin.font(white, left, 'Work_Sans', 1.15rem, normal, 400, auto, normal);
+        }
+    }
+
+    .bear1 {
+        position: absolute;
+        @include mixin.img(47rem, auto);
+        bottom: -10rem;
+        left: 7rem;
+    }
+
+    .bear2 {
+        position: absolute;
+        @include mixin.img(27rem, auto);
+        bottom: -5rem;
+        right: 13rem;
+    }
+
+    .circle {
+        position: absolute;
+        @include mixin.img(20rem, auto);
+        bottom: -13rem;
+        right: 5rem;
+        overflow: hidden;
+        animation: circle 15s 0.1s linear infinite;
+        border: 2px solid green;
+    }
+
+    @keyframes circle {
+        from {
+            transform: rotate(0deg);
+            }
+        to {
+            transform: rotate(360deg);
+            }
+        }
+}
+
+.sec4 {
+    @include mixin.paddingBody;
+    height: 150vh;
+    background-color: rgba(238, 238, 238, 1);
+    @include mixin.layoutFlex(flex, row, center, flex-start, 1rem);
+    position: relative;
+    margin-bottom: 20rem;
+
+    .poppyBear {
+        @include mixin.layoutFlex(flex, row, space-between, center, 1rem);
+        margin-top: 7rem;
+    }
+
+    .poppyBearTitle {
+        width: 30%;
+
+        p {
+            @include mixin.font(black, left, 'Work_Sans', 1.2rem, normal, 400, auto, normal);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            @include mixin.font(black, left, 'Inter', 5rem, normal, 700, 1, normal);
+        }
+    }
+    
+    .citation {
+        width: 50%;
+        margin-top: 3rem;
+
+        p {
+            @include mixin.font(black, left, 'Inter', 1.8rem, normal, 700, auto, normal);
+            margin-bottom: 2rem;
+        }
+
+        .name {
+            @include mixin.font(black, left, 'Work_Sans', 1.15rem, normal, 400, auto, normal);
+        }
+    }
+
+    .bear1 {
+        position: absolute;
+        @include mixin.img(47rem, auto);
+        bottom: -15rem;
+        right: 7rem;
+    }
+
+    .bear2 {
+        position: absolute;
+        @include mixin.img(27rem, auto);
+        bottom: -10rem;
+        left: 13rem;
+    }
+}
 
